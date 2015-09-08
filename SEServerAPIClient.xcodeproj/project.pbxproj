@@ -15,6 +15,13 @@
 		86D9BB521B9F16570038C555 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D9BB511B9F16570038C555 /* Images.xcassets */; };
 		86D9BB551B9F16570038C555 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D9BB531B9F16570038C555 /* LaunchScreen.xib */; };
 		86D9BB611B9F16570038C555 /* SEServerAPIClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB601B9F16570038C555 /* SEServerAPIClientTests.m */; };
+		86D9BB851B9F1A880038C555 /* SEAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB6C1B9F1A880038C555 /* SEAppConfig.m */; };
+		86D9BB861B9F1A880038C555 /* SEMapperWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB711B9F1A880038C555 /* SEMapperWrapper.m */; };
+		86D9BB871B9F1A880038C555 /* SEServerAPICredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB741B9F1A880038C555 /* SEServerAPICredentialManager.m */; };
+		86D9BB881B9F1A880038C555 /* SEServerAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB781B9F1A880038C555 /* SEServerAPIClient.m */; };
+		86D9BB891B9F1A880038C555 /* SEServerAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB7B1B9F1A880038C555 /* SEServerAPIRequest.m */; };
+		86D9BB8A1B9F1A880038C555 /* SEServerAPIRPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB7E1B9F1A880038C555 /* SEServerAPIRPCService.m */; };
+		86D9BB8B1B9F1A880038C555 /* SECategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB841B9F1A880038C555 /* SECategories.m */; };
 		D33496AF4EEB46F52EB82CB0 /* libPods-SEServerAPIClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B84208E07F3159273D36AE /* libPods-SEServerAPIClientTests.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +53,24 @@
 		86D9BB5A1B9F16570038C555 /* SEServerAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEServerAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D9BB5F1B9F16570038C555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86D9BB601B9F16570038C555 /* SEServerAPIClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEServerAPIClientTests.m; sourceTree = "<group>"; };
+		86D9BB6B1B9F1A880038C555 /* SEAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAppConfig.h; sourceTree = "<group>"; };
+		86D9BB6C1B9F1A880038C555 /* SEAppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAppConfig.m; sourceTree = "<group>"; };
+		86D9BB6D1B9F1A880038C555 /* SEAppConfigProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAppConfigProtocol.h; sourceTree = "<group>"; };
+		86D9BB701B9F1A880038C555 /* SEMapperWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEMapperWrapper.h; sourceTree = "<group>"; };
+		86D9BB711B9F1A880038C555 /* SEMapperWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEMapperWrapper.m; sourceTree = "<group>"; };
+		86D9BB731B9F1A880038C555 /* SEServerAPICredentialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEServerAPICredentialManager.h; sourceTree = "<group>"; };
+		86D9BB741B9F1A880038C555 /* SEServerAPICredentialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPICredentialManager.m; sourceTree = "<group>"; };
+		86D9BB771B9F1A880038C555 /* SEServerAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEServerAPIClient.h; sourceTree = "<group>"; };
+		86D9BB781B9F1A880038C555 /* SEServerAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPIClient.m; sourceTree = "<group>"; };
+		86D9BB7A1B9F1A880038C555 /* SEServerAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEServerAPIRequest.h; sourceTree = "<group>"; };
+		86D9BB7B1B9F1A880038C555 /* SEServerAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPIRequest.m; sourceTree = "<group>"; };
+		86D9BB7D1B9F1A880038C555 /* SEServerAPIRPCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEServerAPIRPCService.h; sourceTree = "<group>"; };
+		86D9BB7E1B9F1A880038C555 /* SEServerAPIRPCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPIRPCService.m; sourceTree = "<group>"; };
+		86D9BB7F1B9F1A880038C555 /* SEServerAPIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEServerAPIConstants.h; sourceTree = "<group>"; };
+		86D9BB801B9F1A880038C555 /* SEServerAPIDataMapperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEServerAPIDataMapperProtocol.h; sourceTree = "<group>"; };
+		86D9BB811B9F1A880038C555 /* SEServerAPIRPCServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEServerAPIRPCServiceProtocol.h; sourceTree = "<group>"; };
+		86D9BB831B9F1A880038C555 /* SECategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECategories.h; sourceTree = "<group>"; };
+		86D9BB841B9F1A880038C555 /* SECategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SECategories.m; sourceTree = "<group>"; };
 		87B84208E07F3159273D36AE /* libPods-SEServerAPIClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SEServerAPIClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FDE0F804B16944E47F9330 /* Pods-SEServerAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEServerAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SEServerAPIClient/Pods-SEServerAPIClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +138,9 @@
 		86D9BB431B9F16570038C555 /* SEServerAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				86D9BB6A1B9F1A880038C555 /* AppConfig */,
+				86D9BB6E1B9F1A880038C555 /* Core */,
+				86D9BB821B9F1A880038C555 /* Models */,
 				86D9BB481B9F16570038C555 /* AppDelegate.h */,
 				86D9BB491B9F16570038C555 /* AppDelegate.m */,
 				86D9BB4B1B9F16570038C555 /* ViewController.h */,
@@ -149,6 +177,86 @@
 				86D9BB5F1B9F16570038C555 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86D9BB6A1B9F1A880038C555 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				86D9BB6B1B9F1A880038C555 /* SEAppConfig.h */,
+				86D9BB6C1B9F1A880038C555 /* SEAppConfig.m */,
+				86D9BB6D1B9F1A880038C555 /* SEAppConfigProtocol.h */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		86D9BB6E1B9F1A880038C555 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				86D9BB6F1B9F1A880038C555 /* ParserWrapper */,
+				86D9BB721B9F1A880038C555 /* SEServerAPICredentialManager */,
+				86D9BB761B9F1A880038C555 /* ServerAPIManager */,
+				86D9BB791B9F1A880038C555 /* ServerAPIRequest */,
+				86D9BB7C1B9F1A880038C555 /* ServerAPIRPCService */,
+				86D9BB7F1B9F1A880038C555 /* SEServerAPIConstants.h */,
+				86D9BB801B9F1A880038C555 /* SEServerAPIDataMapperProtocol.h */,
+				86D9BB811B9F1A880038C555 /* SEServerAPIRPCServiceProtocol.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		86D9BB6F1B9F1A880038C555 /* ParserWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				86D9BB701B9F1A880038C555 /* SEMapperWrapper.h */,
+				86D9BB711B9F1A880038C555 /* SEMapperWrapper.m */,
+			);
+			path = ParserWrapper;
+			sourceTree = "<group>";
+		};
+		86D9BB721B9F1A880038C555 /* SEServerAPICredentialManager */ = {
+			isa = PBXGroup;
+			children = (
+				86D9BB731B9F1A880038C555 /* SEServerAPICredentialManager.h */,
+				86D9BB741B9F1A880038C555 /* SEServerAPICredentialManager.m */,
+			);
+			name = SEServerAPICredentialManager;
+			path = ServerAPICertificateManager;
+			sourceTree = "<group>";
+		};
+		86D9BB761B9F1A880038C555 /* ServerAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				86D9BB771B9F1A880038C555 /* SEServerAPIClient.h */,
+				86D9BB781B9F1A880038C555 /* SEServerAPIClient.m */,
+			);
+			path = ServerAPIManager;
+			sourceTree = "<group>";
+		};
+		86D9BB791B9F1A880038C555 /* ServerAPIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				86D9BB7A1B9F1A880038C555 /* SEServerAPIRequest.h */,
+				86D9BB7B1B9F1A880038C555 /* SEServerAPIRequest.m */,
+			);
+			path = ServerAPIRequest;
+			sourceTree = "<group>";
+		};
+		86D9BB7C1B9F1A880038C555 /* ServerAPIRPCService */ = {
+			isa = PBXGroup;
+			children = (
+				86D9BB7D1B9F1A880038C555 /* SEServerAPIRPCService.h */,
+				86D9BB7E1B9F1A880038C555 /* SEServerAPIRPCService.m */,
+			);
+			path = ServerAPIRPCService;
+			sourceTree = "<group>";
+		};
+		86D9BB821B9F1A880038C555 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86D9BB831B9F1A880038C555 /* SECategories.h */,
+				86D9BB841B9F1A880038C555 /* SECategories.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +427,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D9BB4D1B9F16570038C555 /* ViewController.m in Sources */,
+				86D9BB891B9F1A880038C555 /* SEServerAPIRequest.m in Sources */,
+				86D9BB861B9F1A880038C555 /* SEMapperWrapper.m in Sources */,
 				86D9BB4A1B9F16570038C555 /* AppDelegate.m in Sources */,
 				86D9BB471B9F16570038C555 /* main.m in Sources */,
+				86D9BB8B1B9F1A880038C555 /* SECategories.m in Sources */,
+				86D9BB871B9F1A880038C555 /* SEServerAPICredentialManager.m in Sources */,
+				86D9BB881B9F1A880038C555 /* SEServerAPIClient.m in Sources */,
+				86D9BB851B9F1A880038C555 /* SEAppConfig.m in Sources */,
+				86D9BB8A1B9F1A880038C555 /* SEServerAPIRPCService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "SEServerAPIClient.h"
+#import "SEMapperWrapper.h"
+#import "SEServerAPIRPCService.h"
+#import "SEAppConfig.h"
 
 @interface ViewController ()
 
@@ -17,11 +21,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self performServerAPIRequest];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)performServerAPIRequest {
+    
+    id <SEServerAPIDataMapperProtocol> dataMapper = [SEMapperWrapper new];
+    id <SEServerAPIRPCServiceProtocol> rpcService = [SEServerAPIRPCService new];
+    id <SEAppConfigProtocol> appConfig = [SEAppConfig new];
+    
+    SEServerAPIClient *serverAPIManager = [SEServerAPIClient new];
+    serverAPIManager.dataMapper = dataMapper;
+    serverAPIManager.rpcService = rpcService;
+    serverAPIManager.appConfig = appConfig;
+    
+    [serverAPIManager loadCategoriesWithAllLevels:NO success:^(BOOL success) {
+        NSLog(@"success");
+    } failure:^(NSError *error) {
+        NSLog(@"fail");
+    }];
 }
 
 @end
