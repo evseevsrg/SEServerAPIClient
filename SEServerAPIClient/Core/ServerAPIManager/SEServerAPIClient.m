@@ -25,14 +25,20 @@
     NSNumber *operationId = [self.rpcService performRequest:urlRequest success:^(NSString *requestURL, id responseObject) {
         [self.dataMapper parseJSON:responseObject withMappingScheme:urlRequest.scheme success:^(id result) {
             NSLog(@"%s categories JSON parsed successfully", __PRETTY_FUNCTION__);
-            success(YES);
+            if (success) {
+                success(YES);
+            }
         } failure:^(NSError *error) {
             NSLog(@"%s error parsing categories JSON: %@", __PRETTY_FUNCTION__, error.description);
-            failure(error);
+            if (failure) {
+                failure(error);
+            }
         }];
     } failure:^(NSString *requestURL, NSError *error) {
         NSLog(@"%s url: %@ description:%@", __PRETTY_FUNCTION__, requestURL, error.description);
-        failure(error);
+        if (failure) {
+            failure(error);
+        }
     }];
     
     return operationId;

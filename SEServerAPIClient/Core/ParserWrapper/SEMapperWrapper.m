@@ -19,12 +19,18 @@
     if ([[jsonObject objectForKey:@"error"] isEqualToString:@""]) {
         id results = [MTLJSONAdapter modelsOfClass:NSClassFromString(scheme) fromJSONArray:[jsonObject objectForKey:@"data"] error:nil];
         if ([results isKindOfClass:[NSArray class]]) {
-            success(results);
+            if (success) {
+                success(results);
+            }
         } else {
-            failure([self getJSONError:jsonObject]);
+            if (failure) {
+                failure([self getJSONError:jsonObject]);
+            }
         }
     } else {
-        failure([self getJSONError:jsonObject]);
+        if (failure) {
+            failure([self getJSONError:jsonObject]);
+        }
     }
     
 }
