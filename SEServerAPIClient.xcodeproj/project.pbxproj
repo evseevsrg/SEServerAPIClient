@@ -271,6 +271,7 @@
 				86D9BB3E1B9F16570038C555 /* Frameworks */,
 				86D9BB3F1B9F16570038C555 /* Resources */,
 				1B0A983ECF73901548B9FDE8 /* Copy Pods Resources */,
+				6D8E64CFE4A28B586E90CD48 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +291,7 @@
 				86D9BB571B9F16570038C555 /* Frameworks */,
 				86D9BB581B9F16570038C555 /* Resources */,
 				BDFB9ED7B5F5C7795FB79799 /* Copy Pods Resources */,
+				D67B754BA4C7EEF593F40CE0 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,6 +376,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SEServerAPIClient/Pods-SEServerAPIClient-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6D8E64CFE4A28B586E90CD48 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SEServerAPIClient/Pods-SEServerAPIClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9D13C7C72530EFCE5E004600 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +434,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SEServerAPIClientTests/Pods-SEServerAPIClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D67B754BA4C7EEF593F40CE0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SEServerAPIClientTests/Pods-SEServerAPIClientTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

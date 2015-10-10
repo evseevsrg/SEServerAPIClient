@@ -6,6 +6,8 @@ xcodeproj 'SEServerAPIClient.xcodeproj'
 def import_pods
     pod 'AFNetworking', '~> 2.5.3'
     pod 'Mantle', '~> 2.0'
+    pod 'OCMock', '~> 3.1.3' 
+    pod 'Typhoon'
 end
 
 target 'SEServerAPIClient' do
