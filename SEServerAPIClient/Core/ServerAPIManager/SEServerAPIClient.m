@@ -1,5 +1,5 @@
 //
-//  SEServerAPIManager.m
+//  SEServerAPIClient.m
 //  SEServerAPIClient
 //
 //  Created by Sergey Evseev on 19/05/15.

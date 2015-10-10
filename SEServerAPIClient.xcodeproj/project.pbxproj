@@ -22,6 +22,11 @@
 		86D9BB891B9F1A880038C555 /* SEServerAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB7B1B9F1A880038C555 /* SEServerAPIRequest.m */; };
 		86D9BB8A1B9F1A880038C555 /* SEServerAPIRPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB7E1B9F1A880038C555 /* SEServerAPIRPCService.m */; };
 		86D9BB8B1B9F1A880038C555 /* SECategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D9BB841B9F1A880038C555 /* SECategories.m */; };
+		8CC3E1071BC95E9C00372E98 /* SEServerAPICredentialManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E1061BC95E9C00372E98 /* SEServerAPICredentialManagerTest.m */; settings = {ASSET_TAGS = (); }; };
+		8CC3E1091BC95F9100372E98 /* SEServerAPIRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E1081BC95F9100372E98 /* SEServerAPIRequestTest.m */; settings = {ASSET_TAGS = (); }; };
+		8CC3E10D1BC9636900372E98 /* SEMapperWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E10C1BC9636900372E98 /* SEMapperWrapperTest.m */; settings = {ASSET_TAGS = (); }; };
+		8CC3E10F1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E10E1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m */; settings = {ASSET_TAGS = (); }; };
+		8CC3E1111BC969EB00372E98 /* SEServerAPIClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E1101BC969EB00372E98 /* SEServerAPIClientTest.m */; settings = {ASSET_TAGS = (); }; };
 		D33496AF4EEB46F52EB82CB0 /* libPods-SEServerAPIClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B84208E07F3159273D36AE /* libPods-SEServerAPIClientTests.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +77,11 @@
 		86D9BB831B9F1A880038C555 /* SECategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECategories.h; sourceTree = "<group>"; };
 		86D9BB841B9F1A880038C555 /* SECategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SECategories.m; sourceTree = "<group>"; };
 		87B84208E07F3159273D36AE /* libPods-SEServerAPIClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SEServerAPIClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC3E1061BC95E9C00372E98 /* SEServerAPICredentialManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPICredentialManagerTest.m; sourceTree = "<group>"; };
+		8CC3E1081BC95F9100372E98 /* SEServerAPIRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPIRequestTest.m; sourceTree = "<group>"; };
+		8CC3E10C1BC9636900372E98 /* SEMapperWrapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEMapperWrapperTest.m; sourceTree = "<group>"; };
+		8CC3E10E1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEMapperWrapperCategoriesTest.m; sourceTree = "<group>"; };
+		8CC3E1101BC969EB00372E98 /* SEServerAPIClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPIClientTest.m; sourceTree = "<group>"; };
 		F6FDE0F804B16944E47F9330 /* Pods-SEServerAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEServerAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SEServerAPIClient/Pods-SEServerAPIClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +175,7 @@
 		86D9BB5D1B9F16570038C555 /* SEServerAPIClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				8CC3E1011BC95E3200372E98 /* Core */,
 				86D9BB601B9F16570038C555 /* SEServerAPIClientTests.m */,
 				86D9BB5E1B9F16570038C555 /* Supporting Files */,
 			);
@@ -193,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				86D9BB6F1B9F1A880038C555 /* ParserWrapper */,
-				86D9BB721B9F1A880038C555 /* SEServerAPICredentialManager */,
+				86D9BB721B9F1A880038C555 /* ServerAPICredentialManager */,
 				86D9BB761B9F1A880038C555 /* ServerAPIManager */,
 				86D9BB791B9F1A880038C555 /* ServerAPIRequest */,
 				86D9BB7C1B9F1A880038C555 /* ServerAPIRPCService */,
@@ -213,13 +224,13 @@
 			path = ParserWrapper;
 			sourceTree = "<group>";
 		};
-		86D9BB721B9F1A880038C555 /* SEServerAPICredentialManager */ = {
+		86D9BB721B9F1A880038C555 /* ServerAPICredentialManager */ = {
 			isa = PBXGroup;
 			children = (
 				86D9BB731B9F1A880038C555 /* SEServerAPICredentialManager.h */,
 				86D9BB741B9F1A880038C555 /* SEServerAPICredentialManager.m */,
 			);
-			name = SEServerAPICredentialManager;
+			name = ServerAPICredentialManager;
 			path = ServerAPICertificateManager;
 			sourceTree = "<group>";
 		};
@@ -257,6 +268,51 @@
 				86D9BB841B9F1A880038C555 /* SECategories.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8CC3E1011BC95E3200372E98 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3E10B1BC9635000372E98 /* MapperWrapper */,
+				8CC3E1021BC95E3200372E98 /* ServerAPICredentialManager */,
+				8CC3E1031BC95E3200372E98 /* ServerAPIManager */,
+				8CC3E1041BC95E3200372E98 /* ServerAPIRequest */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8CC3E1021BC95E3200372E98 /* ServerAPICredentialManager */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3E1061BC95E9C00372E98 /* SEServerAPICredentialManagerTest.m */,
+			);
+			path = ServerAPICredentialManager;
+			sourceTree = "<group>";
+		};
+		8CC3E1031BC95E3200372E98 /* ServerAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3E1101BC969EB00372E98 /* SEServerAPIClientTest.m */,
+			);
+			name = ServerAPIManager;
+			path = ServerAPIClient;
+			sourceTree = "<group>";
+		};
+		8CC3E1041BC95E3200372E98 /* ServerAPIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3E1081BC95F9100372E98 /* SEServerAPIRequestTest.m */,
+			);
+			path = ServerAPIRequest;
+			sourceTree = "<group>";
+		};
+		8CC3E10B1BC9635000372E98 /* MapperWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3E10C1BC9636900372E98 /* SEMapperWrapperTest.m */,
+				8CC3E10E1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m */,
+			);
+			path = MapperWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +365,7 @@
 		86D9BB391B9F16570038C555 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Sergey Evseev";
 				TargetAttributes = {
 					86D9BB401B9F16570038C555 = {
@@ -475,7 +531,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC3E1091BC95F9100372E98 /* SEServerAPIRequestTest.m in Sources */,
+				8CC3E1071BC95E9C00372E98 /* SEServerAPICredentialManagerTest.m in Sources */,
+				8CC3E10D1BC9636900372E98 /* SEMapperWrapperTest.m in Sources */,
 				86D9BB611B9F16570038C555 /* SEServerAPIClientTests.m in Sources */,
+				8CC3E10F1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m in Sources */,
+				8CC3E1111BC969EB00372E98 /* SEServerAPIClientTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +591,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -598,6 +660,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SEServerAPIClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.evseev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -609,6 +672,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SEServerAPIClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.evseev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -628,6 +692,7 @@
 				);
 				INFOPLIST_FILE = SEServerAPIClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.evseev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEServerAPIClient.app/SEServerAPIClient";
 			};
@@ -644,6 +709,7 @@
 				);
 				INFOPLIST_FILE = SEServerAPIClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.evseev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEServerAPIClient.app/SEServerAPIClient";
 			};

@@ -1,5 +1,5 @@
 //
-//  SEParserWrapper.m
+//  SEMapperWrapper.m
 //  SEServerAPIClient
 //
 //  Created by Sergey Evseev on 25/08/15.

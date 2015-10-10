@@ -36,12 +36,12 @@
     id <SEServerAPIRPCServiceProtocol> rpcService = [SEServerAPIRPCService new];
     id <SEAppConfigProtocol> appConfig = [SEAppConfig new];
     
-    SEServerAPIClient *serverAPIManager = [SEServerAPIClient new];
-    serverAPIManager.dataMapper = dataMapper;
-    serverAPIManager.rpcService = rpcService;
-    serverAPIManager.appConfig = appConfig;
+    SEServerAPIClient *serverAPIClient = [SEServerAPIClient new];
+    serverAPIClient.dataMapper = dataMapper;
+    serverAPIClient.rpcService = rpcService;
+    serverAPIClient.appConfig = appConfig;
     
-    [serverAPIManager loadCategoriesWithAllLevels:NO success:^(BOOL success) {
+    [serverAPIClient loadCategoriesWithAllLevels:NO success:^(BOOL success) {
         NSLog(@"success");
     } failure:^(NSError *error) {
         NSLog(@"fail");

@@ -1,5 +1,5 @@
 //
-//  SEServerAPIManager.h
+//  SEServerAPIClient.h
 //  SEServerAPIClient
 //
 //  Created by Sergey Evseev on 19/05/15.
