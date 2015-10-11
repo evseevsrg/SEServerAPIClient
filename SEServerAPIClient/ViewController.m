@@ -20,8 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+
     [self performServerAPIRequest];
 }
 
@@ -31,17 +30,7 @@
 }
 
 - (void)performServerAPIRequest {
-    
-    id <SEServerAPIDataMapperProtocol> dataMapper = [SEMapperWrapper new];
-    id <SEServerAPIRPCServiceProtocol> rpcService = [SEServerAPIRPCService new];
-    id <SEAppConfigProtocol> appConfig = [SEAppConfig new];
-    
-    SEServerAPIClient *serverAPIClient = [SEServerAPIClient new];
-    serverAPIClient.dataMapper = dataMapper;
-    serverAPIClient.rpcService = rpcService;
-    serverAPIClient.appConfig = appConfig;
-    
-    [serverAPIClient loadCategoriesWithAllLevels:NO success:^(BOOL success) {
+    [self.serverAPIClient loadCategoriesWithAllLevels:NO success:^(BOOL success) {
         NSLog(@"success");
     } failure:^(NSError *error) {
         NSLog(@"fail");

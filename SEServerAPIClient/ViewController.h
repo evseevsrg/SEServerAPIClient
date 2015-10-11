@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SEServerAPIClient;
+
 @interface ViewController : UIViewController
 
+@property (nonatomic, retain) SEServerAPIClient *serverAPIClient;
 
 @end
 

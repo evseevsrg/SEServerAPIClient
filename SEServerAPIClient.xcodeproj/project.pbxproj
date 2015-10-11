@@ -27,6 +27,7 @@
 		8CC3E10D1BC9636900372E98 /* SEMapperWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E10C1BC9636900372E98 /* SEMapperWrapperTest.m */; settings = {ASSET_TAGS = (); }; };
 		8CC3E10F1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E10E1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m */; settings = {ASSET_TAGS = (); }; };
 		8CC3E1111BC969EB00372E98 /* SEServerAPIClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E1101BC969EB00372E98 /* SEServerAPIClientTest.m */; settings = {ASSET_TAGS = (); }; };
+		8CC3E1151BCA7E1700372E98 /* SEServerAPIAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3E1141BCA7E1700372E98 /* SEServerAPIAssembly.m */; settings = {ASSET_TAGS = (); }; };
 		D33496AF4EEB46F52EB82CB0 /* libPods-SEServerAPIClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B84208E07F3159273D36AE /* libPods-SEServerAPIClientTests.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,8 @@
 		8CC3E10C1BC9636900372E98 /* SEMapperWrapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEMapperWrapperTest.m; sourceTree = "<group>"; };
 		8CC3E10E1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEMapperWrapperCategoriesTest.m; sourceTree = "<group>"; };
 		8CC3E1101BC969EB00372E98 /* SEServerAPIClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPIClientTest.m; sourceTree = "<group>"; };
+		8CC3E1131BCA7E1700372E98 /* SEServerAPIAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEServerAPIAssembly.h; sourceTree = "<group>"; };
+		8CC3E1141BCA7E1700372E98 /* SEServerAPIAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEServerAPIAssembly.m; sourceTree = "<group>"; };
 		F6FDE0F804B16944E47F9330 /* Pods-SEServerAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEServerAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SEServerAPIClient/Pods-SEServerAPIClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +151,7 @@
 		86D9BB431B9F16570038C555 /* SEServerAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				8CC3E1121BCA7DF900372E98 /* Assembly */,
 				86D9BB6A1B9F1A880038C555 /* AppConfig */,
 				86D9BB6E1B9F1A880038C555 /* Core */,
 				86D9BB821B9F1A880038C555 /* Models */,
@@ -205,7 +209,7 @@
 			children = (
 				86D9BB6F1B9F1A880038C555 /* ParserWrapper */,
 				86D9BB721B9F1A880038C555 /* ServerAPICredentialManager */,
-				86D9BB761B9F1A880038C555 /* ServerAPIManager */,
+				86D9BB761B9F1A880038C555 /* ServerAPIClient */,
 				86D9BB791B9F1A880038C555 /* ServerAPIRequest */,
 				86D9BB7C1B9F1A880038C555 /* ServerAPIRPCService */,
 				86D9BB7F1B9F1A880038C555 /* SEServerAPIConstants.h */,
@@ -234,12 +238,13 @@
 			path = ServerAPICertificateManager;
 			sourceTree = "<group>";
 		};
-		86D9BB761B9F1A880038C555 /* ServerAPIManager */ = {
+		86D9BB761B9F1A880038C555 /* ServerAPIClient */ = {
 			isa = PBXGroup;
 			children = (
 				86D9BB771B9F1A880038C555 /* SEServerAPIClient.h */,
 				86D9BB781B9F1A880038C555 /* SEServerAPIClient.m */,
 			);
+			name = ServerAPIClient;
 			path = ServerAPIManager;
 			sourceTree = "<group>";
 		};
@@ -313,6 +318,15 @@
 				8CC3E10E1BC9649E00372E98 /* SEMapperWrapperCategoriesTest.m */,
 			);
 			path = MapperWrapper;
+			sourceTree = "<group>";
+		};
+		8CC3E1121BCA7DF900372E98 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				8CC3E1131BCA7E1700372E98 /* SEServerAPIAssembly.h */,
+				8CC3E1141BCA7E1700372E98 /* SEServerAPIAssembly.m */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,6 +537,7 @@
 				86D9BB871B9F1A880038C555 /* SEServerAPICredentialManager.m in Sources */,
 				86D9BB881B9F1A880038C555 /* SEServerAPIClient.m in Sources */,
 				86D9BB851B9F1A880038C555 /* SEAppConfig.m in Sources */,
+				8CC3E1151BCA7E1700372E98 /* SEServerAPIAssembly.m in Sources */,
 				86D9BB8A1B9F1A880038C555 /* SEServerAPIRPCService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
